@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+</head>
+<body>
+	
+</body>
+<script src="jQuery/jquery-3.1.0.min.js"></script>
+<script>
+	console.log('asssss')
+	var url = "http://xs.wxb.com/novel?novel_id=5056",cookies = "Hm_lvt_5859c7e2fd49a1739a0b0f5a28532d91=1523345183,1523351948,1523495355;  Hm_lpvt_5859c7e2fd49a1739a0b0f5a28532d91=1523495355;  PHPSESSID=v5vb7b6flqafscs68qin8eokq6; monitor_count=1"
+	$.ajax({
+		type:'GET',
+		headers:{'Cookie':cookies},
+		url:url,
+		dataType:'json',
+		data:{},
+		success:function(res){
+			console.log(res)
+		}
+	})
+</script>
+</html>
